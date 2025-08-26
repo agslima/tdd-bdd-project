@@ -83,10 +83,12 @@ class TestProductRoutes(TestCase):
         products = []
         for _ in range(count):
             test_product = ProductFactory()
-            response = self.client.post(BASE_URL, json=test_product.serialize())
+            response = self.client.post(
+                BASE_URL, json=test_product.serialize())
             self.assertEqual(
-                response.status_code, status.HTTP_201_CREATED, "Could not create test product"
-            )
+                response.status_code,
+                status.HTTP_201_CREATED,
+                "Could not create test product")
             new_product = response.get_json()
             test_product.id = new_product["id"]
             products.append(test_product)
@@ -156,16 +158,26 @@ class TestProductRoutes(TestCase):
     def test_create_product_no_content_type(self):
         """It should not Create a Product with no Content-Type"""
         response = self.client.post(BASE_URL, data="bad data")
-        self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+        self.assertEqual(
+            response.status_code,
+            status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
 
     def test_create_product_wrong_content_type(self):
         """It should not Create a Product with wrong Content-Type"""
-        response = self.client.post(BASE_URL, data={}, content_type="plain/text")
-        self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+        response = self.client.post(
+            BASE_URL, data={}, content_type="plain/text")
+        self.assertEqual(
+            response.status_code,
+            status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
 
-    #
-    # ADD YOUR TEST CASES HERE
-    #
+    def test_get_product(self):
+        """It should Get a single Product"""
+        # get the id of a product
+        test_product = self._create_products(1)[0]
+        response = self.client.get(f"{BASE_URL}/{test_product.id}")
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        data = response.get_json()
+        self.assertEqual(data["name"], test_product.name)
 
     ######################################################################
     # Utility functions
