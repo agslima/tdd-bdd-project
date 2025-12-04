@@ -82,9 +82,10 @@ nosetests
 To execute the acceptance tests defined in the feature files:
 behave
 
-## Example Scenario (Gherkin)
-The core of this project's documentation lies in the .feature files. Here is an example of a scenario implemented:
-Feature: The product service store
+🥒 Example Scenario (Gherkin)
+
+​The core of this project's documentation lies in the .feature files. Here is an example of a scenario implemented:
+  Feature: The product service store
   As a Catalog Administrator
   I need a RESTful catalog service
   So that I can keep track of all my products
@@ -96,6 +97,7 @@ Feature: The product service store
     When I visit the "Home Page"
     And I press the "Create" button
     Then I should see the message "Success"
+
 
 ## License
 
