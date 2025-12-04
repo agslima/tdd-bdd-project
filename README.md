@@ -67,10 +67,10 @@ Prerequisites
 
 Setup Environment
 
-# Install dependencies
+### Install dependencies
 bash bin/setup.sh
 
-# Activate virtual environment (if needed)
+### Activate virtual environment (if needed)
 source venv/bin/activate
 
 Running the Tests
