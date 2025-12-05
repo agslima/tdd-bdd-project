@@ -58,11 +58,11 @@ This repository is organized to separate business behavior (features) from techn
 
 ## 🚀 How to Run
 
-* Prerequisites
+#### Prerequisites
  * Python 3.9+
  * Virtual Environment
 
-* Setup Environment
+#### Setup Environment
 ```bash
 # Install dependencies
 bash bin/setup.sh
@@ -70,15 +70,17 @@ bash bin/setup.sh
 source venv/bin/activate
 ```
 
-* Running the Tests
-  * **1. Run TDD Unit Tests (Nose)**
+#### Running the Tests
+
+**1. Run TDD Unit Tests (Nose)**
+
 To execute the unit tests and check code quality:
 
 ```bash
 nosetests
 ```
+**2. Run BDD Scenarios (Behave)**
 
-  * **2. Run BDD Scenarios (Behave)**
 To execute the acceptance tests defined in the feature files:
 
 ```bash
