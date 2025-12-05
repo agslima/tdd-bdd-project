@@ -58,43 +58,39 @@ This repository is organized to separate business behavior (features) from techn
 
 ## 🚀 How to Run
 
-Prerequisites
+* Prerequisites
  * Python 3.9+
  * Virtual Environment
 
-Setup Environment
-
-### Install dependencies
-
+* Setup Environment
 ```bash
+# Install dependencies
 bash bin/setup.sh
-```
-
-### Activate virtual environment (if needed)
-
-```bash
+# Activate virtual environment (if needed)
 source venv/bin/activate
 ```
 
-Running the Tests
-1. Run TDD Unit Tests (Nose)
+* Running the Tests
+  * **1. Run TDD Unit Tests (Nose)**
 To execute the unit tests and check code quality:
 
 ```bash
 nosetests
 ```
 
-2. Run BDD Scenarios (Behave)
+  * **2. Run BDD Scenarios (Behave)**
 To execute the acceptance tests defined in the feature files:
 
 ```bash
 behave
 ```
 
-<p align="left">
-<img src="images/behave-success.png" alt="Behave execution success screenshot" width="700"/>
-<em>Figure 1: Successful execution of BDD scenarios, validating business rules against the implementation.</em>
+<p align="center">
+  <img src="images/behave-success.png" alt="Behave execution success screenshot" width="700"/>
+  <br>
+  <em>Figure 1: Successful execution of BDD scenarios, validating business rules against the implementation.</em>
 </p>
+<br>
 
 ## 🥒 Example Scenario (Gherkin)
 
