@@ -76,15 +76,22 @@ source venv/bin/activate
 Running the Tests
 1. Run TDD Unit Tests (Nose)
 To execute the unit tests and check code quality:
+
+```bash
 nosetests
+```
 
 2. Run BDD Scenarios (Behave)
 To execute the acceptance tests defined in the feature files:
+```bash
 behave
+```
 
 🥒 Example Scenario (Gherkin)
 
 ​The core of this project's documentation lies in the .feature files. Here is an example of a scenario implemented:
+
+```gherkin
   Feature: The product service store
   As a Catalog Administrator
   I need a RESTful catalog service
@@ -97,7 +104,7 @@ behave
     When I visit the "Home Page"
     And I press the "Create" button
     Then I should see the message "Success"
-
+```
 
 ## License
 
