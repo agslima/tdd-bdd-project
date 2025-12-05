@@ -1,11 +1,10 @@
 # Product Catalog Microservice - TDD & BDD Implementation
 
 [![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)](https://python.org)
+[![Methodology](https://img.shields.io/badge/Methodology-TDD%20%2F%20BDD-orange.svg)]()
+[![Coverage](https://img.shields.io/badge/Coverage-95%25-brightgreen.svg)]()
 [![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
-[![TDD](https://img.shields.io/badge/Methodology-TDD-orange.svg)]()
-[![BDD](https://img.shields.io/badge/Methodology-BDD-yellow.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](https://opensource.org/licenses/Apache-2.0)
-
 ## Project Overview
 
 This project implements a backend RESTful API for an **E-commerce Product Catalog**, built strictly following **Test Driven Development (TDD)** and **Behavior Driven Development (BDD)** methodologies.
@@ -36,8 +35,6 @@ Used to bridge the gap between technical implementation and business requirement
 * **Feature Files:** Defined business rules in `features/products.feature` using natural language (English).
 * **Step Definitions:** Implemented steps in `features/steps/load_steps.py` to translate Gherkin scenarios into executable Python code.
 * **Acceptance Criteria:** Validated scenarios like "Creating a Product", "Updating Inventory", and "Searching by Category".
-
----
 
 ## Project Structure
 
@@ -93,6 +90,11 @@ To execute the acceptance tests defined in the feature files:
 ```bash
 behave
 ```
+
+<p align="left">
+<img src="images/behave-success.png" alt="Behave execution success screenshot" width="700"/>
+<em>Figure 1: Successful execution of BDD scenarios, validating business rules against the implementation.</em>
+</p>
 
 ## 🥒 Example Scenario (Gherkin)
 
