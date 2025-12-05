@@ -59,7 +59,7 @@ This repository is organized to separate business behavior (features) from techn
 └── config.py               <- App configuration
 ```
 
-## How to Run
+## 🚀 How to Run
 
 Prerequisites
  * Python 3.9+
@@ -68,10 +68,16 @@ Prerequisites
 Setup Environment
 
 ### Install dependencies
+
+```bash
 bash bin/setup.sh
+```
 
 ### Activate virtual environment (if needed)
+
+```bash
 source venv/bin/activate
+```
 
 Running the Tests
 1. Run TDD Unit Tests (Nose)
@@ -83,11 +89,12 @@ nosetests
 
 2. Run BDD Scenarios (Behave)
 To execute the acceptance tests defined in the feature files:
+
 ```bash
 behave
 ```
 
-🥒 Example Scenario (Gherkin)
+## 🥒 Example Scenario (Gherkin)
 
 ​The core of this project's documentation lies in the .feature files. Here is an example of a scenario implemented:
 
@@ -106,7 +113,7 @@ behave
     Then I should see the message "Success"
 ```
 
-## License
+## ⚖️ License
 
 This project is licensed under the Apache 2.0 License.
 Based on the curriculum for the IBM DevOps and Software Engineering Professional Certificate.
