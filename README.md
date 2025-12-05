@@ -56,7 +56,7 @@ This repository is organized to separate business behavior (features) from techn
 └── config.py               <- App configuration
 ```
 
-## 🚀 How to Run
+### 🚀 How to Run
 
 #### Prerequisites
  * Python 3.9+
@@ -94,7 +94,7 @@ behave
 </p>
 <br>
 
-## 🥒 Example Scenario (Gherkin)
+### 🥒 Example Scenario (Gherkin)
 
 ​The core of this project's documentation lies in the .feature files. Here is an example of a scenario implemented:
 
@@ -113,7 +113,7 @@ behave
     Then I should see the message "Success"
 ```
 
-## ⚖️ License
+### ⚖️ License
 
 This project is licensed under the Apache 2.0 License.
 Based on the curriculum for the IBM DevOps and Software Engineering Professional Certificate.
